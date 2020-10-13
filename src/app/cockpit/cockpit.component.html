@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12">
+    <p>Add new Servers or blueprints!</p>
+    <label>Server Name</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerName" /> -->
+    <!-- using local reference with hashtag here, used in template only - alternative to two way databinding used above -->
+    <input type="text" class="form-control" #serverNameInput />
+    <label>Server Content</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent" /> -->
+    <!-- side note this also allows you to get access to the value before calling method -->
+    <input type="text" class="form-control" #serverContentInput />
+    <br />
+    <button class="btn btn-primary" (click)="onAddServer(serverNameInput)">
+      Add Server
+    </button>
+    <button class="btn btn-primary" (click)="onAddBlueprint(serverNameInput)">
+      Add Server Blueprint
+    </button>
+  </div>
+</div>
