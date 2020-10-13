@@ -2,6 +2,10 @@
 
 Component data-binding and lifecycle hook deep dive
 
+Alternatives to data binding:
+1. local references passed through methods
+2. local references fetched through ViewChild
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
 ## Development server
